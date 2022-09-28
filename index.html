@@ -4,48 +4,62 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
   <title>Jackson's Personal Website</title>
 </head>
 <body>
-  <ul>
-    <li><a href="#about">About Me</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#experience">Experience</a></li>
-    <li><a href="#music">Music</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#resume">Resume</a></li>
-  </ul>
+  <nav class="navbar">
+    <ul>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#music">Music</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#resume">Resume</a></li>
+    </ul>
+  </nav>
 
-  <div id="intro">
-    <h1>Jackson Wong</h1>
-    <h2>Computer Science student at UC Berkeley.</h2>
+  <div id="hero">
+    <h1 class="big-heading">Jackson Wong</h1>
+    <h2 class="big-heading">Computer Science student at UC Berkeley.</h2>
+    <br>
+    <button>
+      <p>Contact me!</p>
+    </button>
   </div>
 
-  <div id="about">
+  <div class="content" id="about">
     <h3>About Me</h3>
-    <p>I'm Jackson and I was born and raised in Berkeley, California. I attend UC Berkeley and intend on majoring in Computer Science. I currently focused on learning fullstack software development and am pursuing opportunities for summer 2023!</p>
-    <br>
-    <p>When I am not studying computer science I am playing <a href="#music">slack key guitar</a>, transposing Hawaiian music, or hooping.</p>
+    <p>I'm Jackson and I was born and raised in Berkeley, California. I now study Computer Science at UC Berkeley and am currently focused on learning fullstack software development. I am and am pursuing opportunities for the summer 2023!
+    <br>When I am not studying computer science I am playing <a href="#music">slack key guitar</a>, transposing Hawaiian music, and hooping.</p>
   </div>  
   
-  <div id="projects">
+  <div class="content" id="projects">
     <h2>Projects</h2>
     <h3>This website</h3>
     <p>This website is my first personal project and hopefully the place where I will showcase many more!</p>
   </div>
   
-  <div id="experience">
+  <div class="content" id="experience">
     <h2>Experience</h2>
-    <ol>
-      <li>Intern at Livetree Commnity Unlimited</li>
-    </ol>
+    <h3>Intern at Livetree Community Unlimited</h3>
+    <h4>June 2022 - August 2022</h4>
+    <h4>London, United Kingdom</h4>
+    <ul>
+      <li>
+        Brought new content creators to the community-driven, NFT platform for the launch campaign and optimized the company website for search engine traffic.
+      </li>
+      <li>
+        Reduced marketing research time from 2+ hours down to 5 minutes using web scraping with Selenium in Python.
+      </li>
+    </ul>
   </div>
 
-  <div id="music">
+  <div class="content" id="music">
   <h2>Music</h2>
   </div>
 
-  <div id="contact">
+  <div class="content" id="contact">
     <h2>Contact</h2>
   </div>  
 </body>
