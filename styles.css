@@ -1,11 +1,12 @@
 * {
   box-sizing: border-box; 
-  font-family: 'Roboto';
+  font-family: 'Courier New';
   color: white;
 }
 
 html {
-  background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  /* background: linear-gradient(120deg, #43bee5 50%, #161b40 calc(50% + 1px)); */
+  background-color: #161b40;
 }
 
 .navbar {
@@ -28,14 +29,16 @@ html {
 .navbar a {
   color: white;
   font-size: 30px;
+  text-decoration: none;
 }
 
 .navbar a:hover {
-  color: lawngreen;
+  color: #43bee5;
+  text-decoration-line: underline;
 }
 
 #hero {
-  margin-left: 20%;
+  margin-left: 15%;
   margin-top: 18%;
 }
 
@@ -56,6 +59,10 @@ html {
   margin-top: 10%;
   margin-left: 15%;
   margin-right: 15%;
+}
+
+.content a {
+  color: #43bee5;
 }
 
 #about {
@@ -79,3 +86,62 @@ p {
   font-size: 20px;
 }
 
+button, input[type=submit] {
+  background-color: #41b853; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: 'Courier New';
+  font-weight: 700;
+  border-radius: 40px;
+}
+
+button a {
+  text-decoration: none;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: 100px 100px;
+  grid-gap: 20px;
+}
+
+.project {
+  font-size: 30px;
+  text-align: center;
+  display: inline-grid;
+  clear: left;
+}
+
+.project p {
+  display: inline-block;
+}
+
+img {
+  filter: invert(100%);
+  float: left;
+  display: inline;
+  padding: 10px;
+}
+
+input[type=text], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px; 
+  resize: vertical;
+  color: black;
+}
+
+h6 {
+  font-size: 30px;
+  margin-bottom: 1%;
+  margin-top: 1%;
+}
