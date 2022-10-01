@@ -7,12 +7,13 @@
 html {
   /* background: linear-gradient(120deg, #43bee5 50%, #161b40 calc(50% + 1px)); */
   background-color: #161b40;
+  scrollbar-color: white;
 }
 
 .navbar {
   position: fixed;
-  bottom: 90%;
-  left: 37%;
+  top: 5px;
+  right: 0;
   height: 80px;
   display: flex;
   align-items: center;
@@ -29,7 +30,7 @@ html {
 
 .navbar a:not(button a) {
   color: white;
-  font-size: 30px;
+  font-size: 13px;
   text-decoration: none;
 }
 
@@ -40,7 +41,7 @@ html {
 #hero {
   margin-left: 10%;
   margin-top: 18%;
-  margin-bottom: 20%
+  margin-bottom: 25%
 }
 
 #hero h1 {
@@ -92,15 +93,24 @@ p {
   font-size: 20px;
 }
 
+.about-wrapper {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-gap: 50px;
+}
+
+.about-text, .about-image {
+  display: inline-grid;
+}
+
 .projects {
   display: grid;
-  grid-template-columns: 100px 100px;
+  grid-template-columns: 3fr 3fr;
   grid-gap: 20px;
 }
 
 .project {
   font-size: 30px;
-  text-align: center;
   display: inline-grid;
   clear: left;
 }
@@ -137,37 +147,35 @@ h6 {
 button, input[type=submit] {
   color: #41b853;
   border-radius: 8px;
-  border-width: 3px;
+  border-width: 5px;
   border-color: #41b853;
   text-decoration: none;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding: 10px 10px 10px 10px;
+  padding: 0.75rem 1rem;
   background-color: #161b40;
+  font-size: 13px;
 }
 
-button:hover, input[type=submit]:hover {
+button:hover, input[type=submit]:hover{
   background-color: #102e14;
-}
-
-button:active, input[type=submit]:active, button a:active {
-  transform: translateY(2px);
+  transform: translateY(4px);
   transition-duration: .35s;
-}
-
-button a {
-  color: #41b853;
 }
 
 a {
   text-decoration: none;
+  
 }
 
-.social {
+.socials {
   margin-top: 5%;
   display: flex;
   justify-content: center;
-  column-gap: 3%;
+  column-gap: 5%;
+}
+
+.social:hover {
+  transform: translateY(4px);
+  transition-duration: .35s;
 }
 
 .footer {
