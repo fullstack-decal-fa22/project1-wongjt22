@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box; 
-  font-family: 'Courier New';
+  font-family: 'Sans-Serif';
   --default-color: whitesmoke;
   color: var(--default-color);
 }
@@ -125,6 +125,10 @@ p {
   justify-content: space-between;
 }
 
+.project-header h4:hover {
+  color: #43bee5;
+}
+
 .skills {
   text-align: center;
 }
@@ -183,8 +187,8 @@ a {
   column-gap: 5%;
 }
 
-.social:hover {
-  transform: translateY(4px);
+.social:hover, .project:hover {
+  transform: translateY(8px);
   transition-duration: .35s;
 }
 
