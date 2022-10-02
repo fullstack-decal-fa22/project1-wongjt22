@@ -1,13 +1,14 @@
 * {
   box-sizing: border-box; 
   font-family: 'Courier New';
-  color: white;
+  --default-color: whitesmoke;
+  color: var(--default-color);
 }
+
 
 html {
   /* background: linear-gradient(120deg, #43bee5 50%, #161b40 calc(50% + 1px)); */
   background-color: #161b40;
-  scrollbar-color: white;
 }
 
 .navbar {
@@ -29,7 +30,7 @@ html {
 }
 
 .navbar a:not(button a) {
-  color: white;
+  color: var(--default-color);
   font-size: 13px;
   text-decoration: none;
 }
@@ -105,18 +106,27 @@ p {
 
 .projects {
   display: grid;
-  grid-template-columns: 3fr 3fr;
+  grid-template-columns: 3fr 3fr 3fr;
   grid-gap: 20px;
+  margin-top: 4%;
 }
 
 .project {
   font-size: 30px;
   display: inline-grid;
   clear: left;
+  background-color: #232a65;
+  padding: 3% 3% 3% 3%;
 }
 
-.project p {
-  display: inline-block;
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skills {
+  text-align: center;
 }
 
 img {
